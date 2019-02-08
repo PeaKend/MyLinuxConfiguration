@@ -4,7 +4,7 @@ DISTRO_NAME=`./getDistro.py`
 
 # installs dependences according to the linux distro
 
-if [[ $DISTRO_NAME == "ubuntu"  ]]; then
+if [[ $DISTRO_NAME == "ubuntu"  ]] || [[ $DISTRO_NAME == "debian" ]]; then
     sudo apt update && sudo apt install inkscape make automake pkg-config vim tmux libgtk2.0-dev sassc -y
 fi
 
