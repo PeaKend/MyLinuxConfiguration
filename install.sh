@@ -21,3 +21,6 @@ cd adapta-gtk-theme
 ./autogen.sh --prefix=/usr
 make
 sudo make install
+
+# installs papirus-icon-theme
+wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | sh
